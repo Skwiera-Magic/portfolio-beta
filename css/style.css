@@ -7,7 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: blue;
+  background-color: rgb(0, 0, 179);
 }
 
 h1,
@@ -125,7 +125,7 @@ p {
 }
 
 #fourth {
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/bio.png");
 }
 
 #fifth {
@@ -173,5 +173,21 @@ p {
   background-color: rgb(172, 10, 10);
   display: grid;
   grid-template-columns: 30% 1fr;
+  grid-template-areas: 
+  "contact co";
   border-top: solid 5px black; 
+  height: 70px;
+  align-items: center;
+}
+
+#contact {
+  grid-area: contact;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#co {
+  grid-area: co;
+  display: flex;
+  justify-content: space-around;
 }
