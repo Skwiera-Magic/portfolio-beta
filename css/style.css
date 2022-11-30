@@ -75,6 +75,7 @@ p {
   padding-right: 150px;
 }
 
+/* MAIN */
 .page-wrapper {
   display: grid;
   grid-template-columns: 200px 800px;
@@ -82,12 +83,27 @@ p {
   "about ab"
   "work wo";
   justify-content: center;
+  padding: 10px;
 }
 
-.about {
-  display: flex;
+#ab {
+  border-left: 5px solid;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
 
-.work {
-  display: flex;
+#wo {
+  border-left: 5px solid;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "first first";
+  justify-items: center;
+}
+
+#first {
+  grid-area: first;
 }
