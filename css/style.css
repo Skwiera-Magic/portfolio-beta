@@ -139,5 +139,30 @@ p {
   background-repeat: no-repeat;
   border: solid 3px skyblue;
   margin: 10px;
+  transition: transform .3s;
 }
 
+#first:hover, #second:hover, #third:hover, #fourth:hover, #fifth:hover {
+  transform: scale(1.2, 1.2);
+  cursor: grab;
+  opacity: 0.8;
+}
+
+#first a, #second a, #third a, #fourth a, #fifth a {
+  background: rgba(0, 0, 0, 0.9);
+  color: rgb(172, 10, 10);
+  text-decoration: none;
+  display: flex;
+  height: 15%;
+  width: 35%;
+  position: relative;
+  top: 70%;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+  border-bottom: 6px solid skyblue ;
+}
+
+#first a {
+  font-size: 30px;
+}
