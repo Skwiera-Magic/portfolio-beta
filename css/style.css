@@ -21,3 +21,32 @@ h6 {
 p {
   margin: 0;
 }
+
+/* HEADER */
+.header {
+  background-color: red;
+  height: 100px;
+  border-bottom: 5px solid;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.nav {
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  height: 90px;
+  width: 600px;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav a {
+  color: aquamarine;
+  text-decoration: none;
+}
