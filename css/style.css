@@ -180,6 +180,12 @@ p {
   align-items: center;
 }
 
+.footer a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
 #contact {
   grid-area: contact;
   text-align: center;
@@ -190,4 +196,9 @@ p {
   grid-area: co;
   display: flex;
   justify-content: space-around;
+}
+
+#co img {
+  padding-top: 10px;
+  padding-right: 15px;
 }
