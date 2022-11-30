@@ -75,4 +75,19 @@ p {
   padding-right: 150px;
 }
 
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 200px 800px;
+  grid-template-areas: 
+  "about ab"
+  "work wo";
+  justify-content: center;
+}
 
+.about {
+  display: flex;
+}
+
+.work {
+  display: flex;
+}
