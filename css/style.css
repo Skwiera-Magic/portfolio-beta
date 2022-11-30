@@ -106,4 +106,38 @@ p {
 
 #first {
   grid-area: first;
+  background-image: url("../images/screenshot.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 600px;
+  border: solid 3px skyblue;
+  transition: transform .3s;
+  margin-bottom: 10px;
 }
+
+#second {
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#third {
+  background-image: url("../images/prework.png");
+}
+
+#fourth {
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#fifth {
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#second, #third, #fourth, #fifth {
+  width: 380px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 3px skyblue;
+  margin: 10px;
+}
+
