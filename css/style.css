@@ -1,7 +1,8 @@
 :root {
-  --work-columns: 20vw;
+  --work-columns: 25vw;
   --work-rows: 15vw;
   --secondary-color: rgb(172, 10, 10);
+  --work-rows-mobile: 40vw;
 }
 
 * {
@@ -269,7 +270,7 @@ p {
 
   #wo {
     grid-template-columns: 100%;
-    grid-template-rows: 40vw 40vw 40vw 40vw 40vw;
+    grid-template-rows: var(--work-rows-mobile) var(--work-rows-mobile) var(--work-rows-mobile) var(--work-rows-mobile) var(--work-rows-mobile);
     grid-template-areas: 
     "first"
     "second";
@@ -288,5 +289,11 @@ p {
 
   #co a {
     padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .header h1 {
+    font-size: 300%;
   }
 }
