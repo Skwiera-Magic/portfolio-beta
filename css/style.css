@@ -238,5 +238,55 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  
+  .header {
+    flex-direction: column;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 400%;
+    padding: 0;
+  }
+
+  .nav {
+    height: 50px;
+    font-size: 25px;
+  }
+
+  .hero-banner {
+    align-items: flex-start;
+  }
+
+  .hero-banner h2 {
+    font-size: 180%;
+  }
+
+  .page-wrapper {
+    grid-template-columns: 15% 70%;
+  }
+
+  #wo {
+    grid-template-columns: 100%;
+    grid-template-rows: 40vw 40vw 40vw 40vw 40vw;
+    grid-template-areas: 
+    "first"
+    "second";
+  }
+
+  #first a {
+    height: 10vw;
+
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  #co a {
+    padding-left: 10px;
+  }
 }
