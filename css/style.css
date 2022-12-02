@@ -3,6 +3,7 @@
   --work-rows: 15vw;
   --secondary-color: rgb(172, 10, 10);
   --work-rows-mobile: 40vw;
+  --shadow-color: rgb(229, 255, 0);
 }
 
 * {
@@ -14,7 +15,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgb(0, 0, 179);
+  background-color: rgb(0, 0, 114);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -90,9 +91,10 @@ p {
 }
 
 #ab {
-  border-left: 5px solid;
+  border-left: 5px solid black;
   margin-bottom: 10px;
   padding-left: 10px;
+  color: var(--shadow-color);
 }
 
 #wo {
@@ -150,7 +152,7 @@ p {
   transform: scale(1.2, 1.2);
   cursor: grab;
   opacity: 0.8;
-  box-shadow: inset 0px 0px 5px var(--secondary-color), 0px 0px 15px var(--secondary-color);
+  box-shadow: inset 0px 0px 10px var(--shadow-color),  10px 10px 15px var(--shadow-color);
 }
 
 .project a {
