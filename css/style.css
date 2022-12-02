@@ -1,7 +1,7 @@
 :root {
   --work-columns: 20vw;
   --work-rows: 15vw;
-
+  --secondary-color: rgb(172, 10, 10);
 }
 
 * {
@@ -26,8 +26,9 @@ p {
 
 /* HEADER */
 .header {
-  background-color: rgb(172, 10, 10);
+  background-color: var(--secondary-color);
   height: 100px;
+  width: 100%;
   border-bottom: 5px solid;
   display: flex;
   align-items: flex-end;
@@ -139,17 +140,19 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 3px skyblue;
+  border-radius: 5px;
   margin: 10px;
-  transition: transform .3s;
+  transition: transform .3s ease-out;
 }
 
-#first:hover, #second:hover, #third:hover, #fourth:hover, #fifth:hover {
+.project:hover {
   transform: scale(1.2, 1.2);
   cursor: grab;
   opacity: 0.8;
+  box-shadow: inset 0px 0px 5px var(--secondary-color), 0px 0px 15px var(--secondary-color);
 }
 
-#first a, #second a, #third a, #fourth a, #fifth a {
+.project a {
   background: rgba(0, 0, 0, 0.9);
   color: white;
   text-decoration: none;
@@ -171,7 +174,7 @@ p {
 
 /* CONTACT */
 .footer {
-  background-color: rgb(172, 10, 10);
+  background-color: var(--secondary-color);
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-template-areas: 
@@ -205,7 +208,33 @@ p {
 }
 
 @media only screen and (max-width: 992px) {
-  
+  .header {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 700%;
+    padding: 0;
+  }
+
+  .nav {
+    height: 50px;
+    font-size: 35px;
+  }
+
+  .page-wrapper {
+    grid-template-columns: 10% 80%;
+  }
+
+  #wo {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30vw var(--work-rows) var(--work-rows);
+  }
+
+
 }
 
 @media only screen and (max-width: 768px) {
