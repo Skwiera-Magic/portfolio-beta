@@ -31,14 +31,16 @@
     position: fixed;
   }
 
-  .header h1 {
-    font-size: 50px;
-  }
-
   .nav {
     display: flex;
     justify-content: space-evenly;
     font-size: x-large;
+    align-items: flex-end;
+
+  }
+
+  .nav-h1 {
+    font-size: 50px;
   }
 
  .nav-link {
@@ -57,11 +59,12 @@
     background-position: center;
     background-size: cover;
     border-bottom: solid 5px;
-    min-height: ;
+    min-height: 40vw;
   }
 
-  .main {
-
+  .jumbotron {
+    position: absolute;
+    bottom: 20vh;
   }
 
   .project {
