@@ -35,6 +35,8 @@ p {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
 }
 
 .header h1 {
@@ -45,12 +47,8 @@ p {
 
 .nav {
   padding: 10px;
-  position: sticky;
-  top: 0px;
-  right: 0px;
   display: flex;
-  height: 90px;
-  width: 600px;
+  width: 50vw;
   align-items: flex-end;
   justify-content: space-evenly;
   font-size: 25px;
@@ -63,12 +61,13 @@ p {
 }
 /* BANNER */
 .hero-banner {
-  height: 20vw;
-  background-image: url("../images/twitch-logo.png");
+  height: 40vw;
+  background-image: url("../images/02-portfolio-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: right;
+  justify-content: left;
+  align-items: center;
   border-bottom: 5px solid;
 }
 
