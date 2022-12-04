@@ -1,101 +1,123 @@
 :root {
     --secondary-color: rgba(167, 163, 207);
+    --project-height: 15vw;
 }
 
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
     background-color: rgb(140, 189, 167);
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  /* NAV */
+}
 
-  header {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* NAV */
+
+header {
     z-index: 1;
     background-color: var(--secondary-color);
     opacity: 0.7;
     border-bottom: solid 5px;
     position: fixed;
-  }
+}
 
-  .nav {
+.nav {
     display: flex;
     justify-content: space-evenly;
     font-size: x-large;
     align-items: flex-end;
-  }
+}
 
-  .nav-h1 {
+.nav-h1 {
     font-size: 50px;
-  }
+}
 
- .nav-link {
+.nav-link {
     color: black;
     position: relative;
     bottom: -20px;
- }
+}
 
-  .nav-link:hover, .nav-link:active {
+.nav-link:hover,
+.nav-link:active {
     text-decoration: none;
     background-color: rgb(140, 189, 167);
     border-radius: 15px;
     box-shadow: 0 0 5px;
-  }
+}
 
-  .hero-banner {
+.hero-banner {
     background-image: url(../images/02-portfolio-4.jpg);
     background-position: center;
     background-size: cover;
     border-bottom: solid 5px;
     min-height: 40vw;
-  }
+}
 
-  .jumbotron {
+.jumbotron {
     position: absolute;
     bottom: 20vh;
-  }
+    background-image: linear-gradient(15deg, rgba(255, 0, 0), rgba(255, 255, 0));
+    border-radius: 15px;
+}
 
-  .project {
+.ab {
+    border-left: solid 5px;
+}
+
+.wo {
+    border-left: solid 5px;
+}
+
+.project {
+    display: flex;
+    min-height: 15vw;
+    justify-content: space-evenly;
+}
+
+.project-link {
+
+}
+
+.first {
     min-height: 30vw;
-  }
+}
 
-  .first {
-    background-image: url(/images/screenshot.png);
-    
-  }
-
-  .second {
+.second {
     background-image: url(/images/portfolio.png);
-  }
+}
 
-  .third {
+.third {
     background-image: url(/images/prework.png);
-  }
+}
 
-  .fourth {
+.fourth {
     background-image: url(/images/bio.png);
-  }
+}
 
-  .fifth {
+.fifth {
     background-image: url(/images/02-run-buddy.jpg);
-  }
+}
 
-  footer {
+footer {
     border-top: solid 5px;
     min-height: 75px;
     background-color: var(--secondary-color);
-  }
+}
