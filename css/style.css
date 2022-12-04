@@ -1,9 +1,9 @@
 :root {
   --work-columns: 25vw;
   --work-rows: 15vw;
-  --secondary-color: rgb(172, 10, 10);
+  --secondary-color: rgb(167, 163, 207);
   --work-rows-mobile: 40vw;
-  --shadow-color: rgb(229, 255, 0);
+  --shadow-color: rgb(0, 0, 0);
 }
 
 * {
@@ -15,7 +15,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgb(0, 0, 114);
+  background-color: rgb(140, 189, 167);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -71,11 +71,11 @@ p {
   border-bottom: 5px solid;
 }
 
-.hero-banner h2 {
+.jumbotron {
   color: rgba(0, 0, 0, 0.65);
-  font-size: 300%;
+  font-size: 200%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-right: 10vw;
+  padding-left: 10vw;
 }
 
 /* MAIN */
@@ -93,7 +93,7 @@ p {
   border-left: 5px solid black;
   margin-bottom: 10px;
   padding-left: 10px;
-  color: var(--shadow-color);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 #wo {
