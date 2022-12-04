@@ -4,6 +4,7 @@
   --secondary-color: rgb(167, 163, 207);
   --work-rows-mobile: 40vw;
   --shadow-color: rgb(0, 0, 0);
+  --margin: 0;
 }
 
 * {
@@ -19,11 +20,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: var(--margin);
 }
 
 p {
-  margin: 0;
+  margin: var(--margin);
 }
 
 /* HEADER */
@@ -75,7 +76,11 @@ p {
   color: rgba(0, 0, 0, 0.65);
   font-size: 200%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-left: 10vw;
+  border-radius: 15px;
+  position: absolute;
+  left: 5vw;
+  padding: 3vw;
+  background-image: linear-gradient(15deg, rgba(255, 0, 0, 0.6), rgba(255, 255, 0, 0.25));
 }
 
 /* MAIN */
@@ -133,7 +138,7 @@ p {
 }
 
 #fifth {
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 
 #second, #third, #fourth, #fifth {
