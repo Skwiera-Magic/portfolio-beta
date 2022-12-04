@@ -11,21 +11,21 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    margin: var(--margin);
+    margin: 0;
   }
   
   p {
-    margin: var(--margin);
+    margin: 0;
   }
   
   header {
     z-index: 1;
-    background: rgb(rgba(134, 30, 30, 0.664), green, blue);
+    background-color: rgb(rgba(134, 30, 30, 0.664), green, blue);
     border-bottom: solid 5px;
     /* position: fixed; */
   }
   .header h1 {
-
+    font-size: 50px;
   }
 
   .nav {
@@ -39,4 +39,20 @@
     background-image: url(../images/02-portfolio-4.jpg);
     background-position: center;
     background-size: cover;
+    border-bottom: solid 5px;
+    min-height: 50vh;
+  }
+
+  .project {
+    min-height: 20vw;
+  }
+
+  .first {
+    background-image: url(../images/screenshot.png);
+    width: 100%;
+    min-height: 40vw;
+  }
+
+  .second {
+
   }

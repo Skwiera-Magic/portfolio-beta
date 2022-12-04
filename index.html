@@ -27,9 +27,9 @@
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner container">
+  <section class="hero-banner container-fluid">
     <div class="row p-8">
-      <div class="jumbotron col-md-4">
+      <div class="jumbotron col-md-4 col-md-offset-2">
         <h1>My Portfolio</h1>
         <p>This is just a simple project </p>
         <p>But shows my progress nicely</p>
@@ -41,9 +41,9 @@
   <main class="container">
     <section class="page-wrapper row">
       <section class="page-section-about col-md-4">
-        <h2 id="about">About Me</h2>
+        <h2 class="about">About Me</h2>
       </section>
-      <section id="ab col-md-8">
+      <section class="ab col-md-8">
         <p>👋 Hi, I’m Skwiera-Magic</p>
         <p>👀 I’m interested in all things related with new tech and ways of using it effectively to make life easier
         </p>
@@ -53,25 +53,31 @@
     </section>
     <!-- portfolio container -->
     <div class="row">
-      <section class="page-section-work col-md-4" id="work">
+      <section class="page-section-work work col-md-2">
         <h2>Work</h2>
       </section>
-      <section id="wo col-md-8 ">
-        <section class="project" id="first col-md-8">
-          <a href="https://skwiera-magic.github.io/accessibility-optimization/">Accesibility optimization</a>
-        </section>
-        <section class="project" id="second">
-          <a href="https://skwiera-magic.github.io/portfolio/">Portfolio</a>
-        </section>
-        <section class="project" id="third">
-          <a href="https://skwiera-magic.github.io/bootcamp-prework/">Prework</a>
-        </section>
-        <section class="project" id="fourth">
-          <a href="https://skwiera-magic.github.io/bootcamp-basics/">Student Bio</a>
-        </section>
-        <section class="project" id="fifth">
-          <a href="#">Lorem, ipsum dolor.</a>
-        </section>
+      <section class="wo col-md-8">
+        <div class="row ">
+          <section class="project first">
+            <a href="https://skwiera-magic.github.io/accessibility-optimization/">Accesibility optimization</a>
+          </section>
+        </div>
+        <div class="row">
+          <section class="project second" id="">
+            <a href="https://skwiera-magic.github.io/portfolio/">Portfolio</a>
+          </section>
+          <section class="project col-md-2" id="third">
+            <a href="https://skwiera-magic.github.io/bootcamp-prework/">Prework</a>
+          </section>
+        </div>
+        <div class="row">
+          <section class="project" id="fourth">
+            <a href="https://skwiera-magic.github.io/bootcamp-basics/">Student Bio</a>
+          </section>
+          <section class="project" id="fifth">
+            <a href="#">Lorem, ipsum dolor.</a>
+          </section>
+        </div>
       </section>
     </div>
 
