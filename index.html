@@ -6,16 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Skwiera_Magic's Portfolio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  <link rel="stylesheet" href="./css/style-2.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header class="header">
-    <h1>Skwiera_Magic</h1>
+  <header class="header container">
+    <h1 class="col-md-8 p-4">Skwiera_Magic</h1>
     <nav>
-      <div class="nav">
+      <div class="nav col-md-4 ">
         <a href="#about">About Me</a>
         <a href="#work">My Work</a>
         <a href="#contact">Contact Me</a>
@@ -24,8 +26,8 @@
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div class="jumbotron">
+  <section class="hero-banner container">
+    <div class="jumbotron col-md-4">
       <h1>My Portfolio</h1>
       <p>This is just a simple project </p>
       <p>But shows my progress nicely</p>
@@ -33,9 +35,9 @@
     </div>
   </section>
 
-  <main>
-    <section class="page-wrapper">
-      <section class="page-section-about">
+  <main class="container">
+    <section class="page-wrapper container">
+      <section class="page-section-about row">
         <h2 id="about">About Me</h2>
       </section>
       <section id="ab">
@@ -47,7 +49,7 @@
       </section>
 
       <!-- portfolio container -->
-      <section class="page-section-work" id="work">
+      <section class="page-section-work row" id="work">
         <h2>Work</h2>
       </section>
       <section id="wo">
@@ -71,13 +73,15 @@
   </main>
 
   <!-- contact -->
-  <footer class="footer">
-    <h2 id="contact">Contact Me</h2>
-    <div id="co">
-      <a href="https://github.com/Skwiera-Magic"><img src="./images/user.png">GitHub</a>
-      <a href="https://www.twitch.tv/skwiera_magic"><img src="./images/search.png">Twitch</a>
-      <a href="https://www.youtube.com/user/MrSkwiera"><img src="./images/user.png">YouTube</a>
-      <a href="https://www.facebook.com/SkwieraMagic"><img src="./images/shopping-bag.png">Facebook</a>
+  <footer class="footer container">
+    <div class="row">
+      <h2 id="contact">Contact Me</h2>
+      <div id="co">
+        <a href="https://github.com/Skwiera-Magic"><img src="./images/user.png">GitHub</a>
+        <a href="https://www.twitch.tv/skwiera_magic"><img src="./images/search.png">Twitch</a>
+        <a href="https://www.youtube.com/user/MrSkwiera"><img src="./images/user.png">YouTube</a>
+        <a href="https://www.facebook.com/SkwieraMagic"><img src="./images/shopping-bag.png">Facebook</a>
+      </div>
     </div>
   </footer>
 </body>
