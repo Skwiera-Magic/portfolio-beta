@@ -11,6 +11,7 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
+    background-color: rgb(140, 189, 167);
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -21,12 +22,15 @@
     margin: 0;
   }
   
+  /* NAV */
+
   header {
     z-index: 1;
     background-color: var(--secondary-color);
     border-bottom: solid 5px;
     position: fixed;
   }
+
   .header h1 {
     font-size: 50px;
   }
@@ -34,8 +38,18 @@
   .nav {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     font-size: x-large;
+  }
+
+ .nav-link {
+    color: black;
+ }
+
+  .nav-link:hover, .nav-link:active {
+    text-decoration: none;
+    background-color: rgb(140, 189, 167);
+    border-radius: 15px;
+    box-shadow: 0 0 5px;
   }
 
   .hero-banner {
@@ -43,26 +57,40 @@
     background-position: center;
     background-size: cover;
     border-bottom: solid 5px;
-    min-height: 50vh;
+    min-height: ;
+  }
+
+  .main {
+
   }
 
   .project {
-    min-height: 20vw;
+    min-height: 30vw;
   }
 
   .first {
-    background-image: url(../images/screenshot.png);
-    width: 90%;
-    min-height: 40vw;
+    background-image: url(/images/screenshot.png);
+    
   }
 
   .second {
-    background-image: url(../images/portfolio.png);
+    background-image: url(/images/portfolio.png);
+  }
+
+  .third {
+    background-image: url(/images/prework.png);
+  }
+
+  .fourth {
+    background-image: url(/images/bio.png);
+  }
+
+  .fifth {
+    background-image: url(/images/02-run-buddy.jpg);
   }
 
   footer {
     border-top: solid 5px;
     min-height: 75px;
-    background-color: var(--secondary-color
-    );
+    background-color: var(--secondary-color);
   }
