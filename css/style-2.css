@@ -1,3 +1,7 @@
+:root {
+    --secondary-color: rgba(167, 163, 207);
+}
+
 * {
     box-sizing: border-box;
   }
@@ -7,7 +11,6 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
-    background-color: rgb(140, 189, 167);
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -20,9 +23,9 @@
   
   header {
     z-index: 1;
-    background-color: rgb(rgba(134, 30, 30, 0.664), green, blue);
+    background-color: var(--secondary-color);
     border-bottom: solid 5px;
-    /* position: fixed; */
+    position: fixed;
   }
   .header h1 {
     font-size: 50px;
@@ -49,10 +52,17 @@
 
   .first {
     background-image: url(../images/screenshot.png);
-    width: 100%;
+    width: 90%;
     min-height: 40vw;
   }
 
   .second {
+    background-image: url(../images/portfolio.png);
+  }
 
+  footer {
+    border-top: solid 5px;
+    min-height: 75px;
+    background-color: var(--secondary-color
+    );
   }
