@@ -3,7 +3,9 @@
     --secondary-color: rgba(167, 163, 207, 0.8);
     --project-height: 13vw;
     --border-color: black;
+    --border-width: 5px;
     --border-radius: 15px;
+
 }
 
 * {
@@ -36,7 +38,7 @@ p {
 header {
     z-index: 1;
     background-color: var(--secondary-color);
-    border-bottom: solid 5px var(--border-color);
+    border-bottom: solid var(--border-width) var(--border-color);
     position: fixed;
 }
 
@@ -73,7 +75,7 @@ header {
     background-image: url(../images/02-portfolio-4.jpg);
     background-position: center;
     background-size: cover;
-    border-bottom: solid 5px var(--border-color);
+    border-bottom: solid var(--border-width) var(--border-color);
     min-height: 40vw;
 }
 
@@ -85,23 +87,17 @@ header {
     border-radius: var(--border-radius);
 }
 
-.ab {
-    border-left: solid 5px var(--border-color);
+.ab, .wo {
+    border-left: solid var(--border-width) var(--border-color);
 }
 
-.wo {
-    border-left: solid 5px var(--border-color);
-}
 
 .project {
-    display: flex;
     height: var(--project-height);
-    justify-content: space-evenly;
+    border: solid var(--border-width) var(--border-color);
+    border-radius: var(--border-radius);
 }
 
-.project img {
-    border: solid 5px var(--border-color);
-}
 
 .project-link {
     background-color: aqua;
@@ -121,11 +117,11 @@ header {
 }
 
 .first {
-    height: calc(var(--project-height) + var(--project-height));
+    height: calc(var(--project-height) * 2);
 }
 
 footer {
-    border-top: solid 5px var(--border-color);
+    border-top: solid var(--border-width) var(--border-color);
     min-height: 75px;
     background-color: var(--secondary-color);
 }
