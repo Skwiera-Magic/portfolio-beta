@@ -1,7 +1,8 @@
 :root {
-    --secondary-color: rgba(167, 163, 207);
+    --secondary-color: rgba(167, 163, 207, 0.8);
     --project-height: 15vw;
     --border-color: black;
+    --border-radius: 15px;
 }
 
 * {
@@ -34,7 +35,6 @@ p {
 header {
     z-index: 1;
     background-color: var(--secondary-color);
-    opacity: 0.7;
     border-bottom: solid 5px var(--border-color);
     position: fixed;
 }
@@ -50,7 +50,7 @@ header {
     font-size: 50px;
 }
 
-.nav-link {
+.nav-link, .footer-link {
     color: black;
     position: relative;
     bottom: -20px;
@@ -58,10 +58,12 @@ header {
 }
 
 .nav-link:hover,
-.nav-link:active {
+.nav-link:active,
+.footer-link:hover,
+.footer-link:active {
     text-decoration: none;
     background-color: rgb(140, 189, 167);
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     box-shadow: 0 0 5px;
 }
 
@@ -76,8 +78,9 @@ header {
 .jumbotron {
     position: relative;
     top: 30vh;
-    background-image: linear-gradient(15deg, rgba(255, 0, 0), rgba(255, 255, 0));
-    border-radius: 15px;
+    background-image: linear-gradient(15deg, rgba(255, 0, 0, 0.8), 
+    rgba(255, 255, 0, 0.8));
+    border-radius: var(--border-radius);
 }
 
 .ab {
@@ -90,24 +93,26 @@ header {
 
 .project {
     display: flex;
-    min-height: 15vw;
+    height: var(--project-height);
     justify-content: space-evenly;
     background-size: cover;
 }
 
 .project img {
-    border-radius: 25px;
     border: solid 5px var(--border-color);
 }
 
 .project-link {
     background-color: aqua;
     position: absolute;
-
+    bottom: 40%;
+    left: 15%;
+    padding: 15px;
+    border-radius: var(--border-radius);
 }
 
 .first {
-    min-height: 30vw;
+    height: calc(var(--project-height) + var(--project-height));
 }
 
 .first img {
