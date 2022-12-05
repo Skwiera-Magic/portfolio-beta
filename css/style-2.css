@@ -1,6 +1,7 @@
 :root {
     --secondary-color: rgba(167, 163, 207);
     --project-height: 15vw;
+    --border-color: black;
 }
 
 * {
@@ -34,7 +35,7 @@ header {
     z-index: 1;
     background-color: var(--secondary-color);
     opacity: 0.7;
-    border-bottom: solid 5px;
+    border-bottom: solid 5px var(--border-color);
     position: fixed;
 }
 
@@ -53,6 +54,7 @@ header {
     color: black;
     position: relative;
     bottom: -20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-link:hover,
@@ -67,7 +69,7 @@ header {
     background-image: url(../images/02-portfolio-4.jpg);
     background-position: center;
     background-size: cover;
-    border-bottom: solid 5px;
+    border-bottom: solid 5px var(--border-color);
     min-height: 40vw;
 }
 
@@ -79,11 +81,11 @@ header {
 }
 
 .ab {
-    border-left: solid 5px;
+    border-left: solid 5px var(--border-color);
 }
 
 .wo {
-    border-left: solid 5px;
+    border-left: solid 5px var(--border-color);
 }
 
 .project {
@@ -91,7 +93,11 @@ header {
     min-height: 15vw;
     justify-content: space-evenly;
     background-size: cover;
-    background-position: center;
+}
+
+.project img {
+    border-radius: 25px;
+    border: solid 5px var(--border-color);
 }
 
 .project-link {
@@ -125,7 +131,7 @@ header {
 }
 
 footer {
-    border-top: solid 5px;
+    border-top: solid 5px var(--border-color);
     min-height: 75px;
     background-color: var(--secondary-color);
 }
