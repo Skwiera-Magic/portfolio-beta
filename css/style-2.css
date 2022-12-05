@@ -53,7 +53,8 @@ header {
     font-size: 50px;
 }
 
-.nav-link, .footer-link {
+.nav-link,
+.footer-link {
     color: black;
     position: relative;
     bottom: -20px;
@@ -63,8 +64,7 @@ header {
 .nav-link:hover,
 .nav-link:active,
 .footer-link:active,
-.footer-link:hover
- {
+.footer-link:hover {
     text-decoration: none;
     background-color: var(--background-color);
     border-radius: var(--border-radius);
@@ -82,12 +82,13 @@ header {
 .jumbotron {
     position: relative;
     top: 30vh;
-    background-image: linear-gradient(15deg, rgba(255, 0, 0, 0.8), 
-    rgba(255, 255, 0, 0.8));
+    background-image: linear-gradient(15deg, rgba(255, 0, 0, 0.8),
+            rgba(255, 255, 0, 0.8));
     border-radius: var(--border-radius);
 }
 
-.ab, .wo {
+.ab,
+.wo {
     border-left: solid var(--border-width) var(--border-color);
 }
 
@@ -96,11 +97,12 @@ header {
     height: var(--project-height);
     border: solid var(--border-width) var(--border-color);
     border-radius: var(--border-radius);
+    transition: ease-in-out 0.3s;
 }
 
 
 .project-link {
-    background-color: aqua;
+    background-color: var(--secondary-color);
     position: absolute;
     bottom: 40%;
     left: 5vh;
@@ -113,7 +115,8 @@ header {
     text-decoration: none;
     background-color: var(--background-color);
     border-radius: var(--border-radius);
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 15px var(--secondary-color),inset 0 0 15px var(--secondary-color);
+    transform: scale(1.2, 1.2);
 }
 
 .first {
