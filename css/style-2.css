@@ -1,7 +1,7 @@
 :root {
     --background-color: rgb(140, 189, 167);
     --secondary-color: rgba(167, 163, 207, 0.8);
-    --project-height: 15vw;
+    --project-height: 13vw;
     --border-color: black;
     --border-radius: 15px;
 }
@@ -97,7 +97,6 @@ header {
     display: flex;
     height: var(--project-height);
     justify-content: space-evenly;
-    background-size: cover;
 }
 
 .project img {
@@ -111,6 +110,14 @@ header {
     left: 5vh;
     padding: 15px;
     border-radius: var(--border-radius);
+}
+
+.project:active,
+.project:hover {
+    text-decoration: none;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 5px;
 }
 
 .first {
