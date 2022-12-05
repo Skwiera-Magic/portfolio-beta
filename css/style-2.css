@@ -1,4 +1,5 @@
 :root {
+    --background-color: rgb(140, 189, 167);
     --secondary-color: rgba(167, 163, 207, 0.8);
     --project-height: 15vw;
     --border-color: black;
@@ -14,7 +15,7 @@ body {
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
-    background-color: rgb(140, 189, 167);
+    background-color: var(--background-color);
 }
 
 h1,
@@ -59,10 +60,11 @@ header {
 
 .nav-link:hover,
 .nav-link:active,
-.footer-link:hover,
-.footer-link:active {
+.footer-link:active,
+.footer-link:hover
+ {
     text-decoration: none;
-    background-color: rgb(140, 189, 167);
+    background-color: var(--background-color);
     border-radius: var(--border-radius);
     box-shadow: 0 0 5px;
 }
@@ -106,33 +108,13 @@ header {
     background-color: aqua;
     position: absolute;
     bottom: 40%;
-    left: 15%;
+    left: 5vh;
     padding: 15px;
     border-radius: var(--border-radius);
 }
 
 .first {
     height: calc(var(--project-height) + var(--project-height));
-}
-
-.first img {
-
-}
-
-.second {
-    
-}
-
-.third {
-    
-}
-
-.fourth {
-    
-}
-
-.fifth {
-    
 }
 
 footer {
