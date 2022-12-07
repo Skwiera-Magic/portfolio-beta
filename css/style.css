@@ -1,5 +1,21 @@
+:root {
+  --image-width: 50vw;
+}
+
 .hero {
   background-image: url(/images/02-portfolio-4.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.grid {
+  border-left: solid 5px;
+}
+
+.project img {
+  width: calc(var(--image-width) / 2) ;
+}
+
+.first img {
+  width: var(--image-width);
 }
