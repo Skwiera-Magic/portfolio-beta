@@ -8,7 +8,11 @@
   background-position: center;
 }
 
-.grid {
+.jumbotron-text {
+  text-align: center;
+}
+
+.about {
   border-left: solid 5px;
 }
 
