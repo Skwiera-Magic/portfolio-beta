@@ -15,11 +15,3 @@
 .about {
   border-left: solid 5px;
 }
-
-.project img {
-  width: calc(var(--image-width) / 2) ;
-}
-
-.first img {
-  width: var(--image-width);
-}
