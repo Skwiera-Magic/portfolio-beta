@@ -2,6 +2,9 @@
   --image-width: 50vw;
 }
 
+* {
+  font-family: 'Jura', sans-serif;
+}
 .hero {
   background-image: url(/images/02-portfolio-4.jpg);
   background-size: cover;
@@ -10,9 +13,8 @@
 
 .jumbotron-text {
   text-align: center;
+  font-family: 'Anton';
 }
-
-
 
 .card-custom {
   transition: ease-in-out 0.3s;
@@ -25,6 +27,21 @@
   transform: scale(1.2, 1.2);
   box-shadow: 0 0 20px;
   z-index: 2;
+}
+
+footer {
+  padding: 10px;
+  align-content: center;
+}
+
+.footer-link {
+  border-radius: 15px;
+}
+
+.footer-link:active, .footer-link:hover {
+  background-color: rgb(140, 189, 167);
+  border: 2px solid;
+  box-shadow: 0 0 5px black;
 }
 
 @media only screen and (min-width: 992px) {
