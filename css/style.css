@@ -12,6 +12,18 @@
   text-align: center;
 }
 
-.about {
+.about, .grid {
   border-left: solid 5px;
+}
+
+.card-custom {
+  transition: ease-in-out 0.3s;
+  z-index: 1;
+}
+
+.card-custom:active, 
+.card-custom:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0 0 20px;
+  z-index: 2;
 }
