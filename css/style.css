@@ -89,6 +89,10 @@ p {
   padding: 2%;
 }
 
+.twitch {
+  width: 100px;
+}
+
 #ab {
   border-left: 5px solid black;
   margin-bottom: 10px;
@@ -149,8 +153,8 @@ p {
 
 .project:hover {
   transform: scale(1.2, 1.2);
-  cursor: grab;
   opacity: 0.8;
+  z-index: 2;
   box-shadow: inset 0px 0px 10px var(--shadow-color),  10px 10px 15px var(--shadow-color);
 }
 
