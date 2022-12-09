@@ -5,8 +5,18 @@
 * {
   font-family: 'Jura', sans-serif;
 }
+
+.twitch {
+  width: 120px;
+  border-radius: 15px;
+}
+
+.navbar-brand span {
+  padding-left: 10px;
+}
+
 .hero {
-  background-image: url(/images/02-portfolio-4.jpg);
+  background-image: url(../images/02-portfolio-4.jpg);
   background-size: cover;
   background-position: center;
 }
